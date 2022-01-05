@@ -1,0 +1,9 @@
+﻿@model AulaConsumirAPicerto.Models.Pessoa
+@using (Html.BeginForm("Excluir", "Home", FormMethod.Post))
+{
+    <label>ID:</label>
+    @Html.TextBoxFor(p => p.id)
+    <br />
+    <br />
+    <input type="submit" value="Excluir" />
+}

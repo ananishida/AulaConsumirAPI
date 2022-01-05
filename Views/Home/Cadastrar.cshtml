@@ -1,0 +1,9 @@
+﻿@model AulaConsumirAPicerto.Models.Pessoa
+@using (Html.BeginForm("Cadastrar", "Home", FormMethod.Post))
+{
+<label> Nome:</label>
+    <br/>   
+        @Html.TextBoxFor(p =>p.nome)
+    <br />
+    <input type="submit" value="Cadastrar" />
+    }

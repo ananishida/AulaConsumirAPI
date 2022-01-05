@@ -1,0 +1,10 @@
+﻿
+
+@model List<AulaConsumirAPicerto.Models.Pessoa>
+@{
+}
+@foreach (var pessoa in @Model)
+{
+    @Html.ActionLink(pessoa.nome,"Alterar",new {id = 1})
+    <br/>
+}

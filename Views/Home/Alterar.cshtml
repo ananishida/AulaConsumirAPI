@@ -1,0 +1,15 @@
+﻿@model AulaConsumirAPicerto.Models.Pessoa
+@using (Html.BeginForm("Alterar", "Home", FormMethod.Post))
+{
+<label>ID</label>
+    <br />
+    @Html.TextBoxFor(p => p.id)
+    <br />
+    <br />
+    <label> Nome:</label>
+    <br />
+    @Html.TextBoxFor(p => p.nome)
+    <br />
+    <br />
+    <input type="submit" value="Alterar" />
+    }
